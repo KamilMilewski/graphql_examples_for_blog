@@ -6,7 +6,7 @@ module Types
       Post.all
     end
 
-    field :posts_connection, Types::PostsConnection, null: false, connection: true
+    field :posts_connection, Types::PostsConnection, null: false
     def posts_connection(**_args)
       Post.all
     end
